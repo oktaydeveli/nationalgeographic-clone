@@ -1,0 +1,895 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "menu-geo";
+  src: url(./Fonts/geographweb-regular.woff2);
+}
+
+@font-face {
+  font-family: "geoeditmedium";
+  src: url(./Fonts/geographeditweb-medium.woff2);
+}
+
+@font-face {
+  font-family: "geobrandbold";
+  src: url(./Fonts/geographweb-bold.woff2);
+}
+
+@font-face {
+  font-family: "geoeditregular";
+  src: url(./Fonts/geographeditweb-regular.woff2);
+}
+
+@font-face {
+  font-family: "geobranditalic";
+  src: url(./Fonts/geographeditweb-regularitalic.woff2);
+}
+.container-fluid{
+  font-family: geoeditregular; 
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 0px 8px;
+  margin-bottom: 1px;
+}
+.logo img {
+  width: 110px;
+  margin-left: 7px;
+}
+.navbar {
+  display: flex;
+  height: 50px;
+}
+.navbar a {
+  margin: 5px 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  align-self: center;
+  text-align: center;
+  height: 100%;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+#LOGİN:hover {
+  color: #777777;
+}
+#search:hover {
+  color: #777777;
+}
+#menu:hover {
+  color: #777777;
+}
+#newsletter {
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-color: #ffbf00;
+  text-decoration-thickness: 2px;
+  background-image: linear-gradient(#ffbf00 0 0);
+  background-size: 100% 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: 0.4s;
+}
+#subscribe {
+  background-image: linear-gradient(#ffbf00, #ffbf00);
+  background-color: black;
+  color: white;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  background-size: 0 100%;
+  height: 100%;
+  width: 120px;
+  margin: 0px;
+  padding: 0px;
+}
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+
+}
+
+.header h1 {
+  font-weight: bold;
+  margin-top: 100px;
+  letter-spacing: 5px;
+  font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif,
+    sans-serif;
+  font-size: 50px;
+  font-weight: 400px;
+  letter-spacing: 3.5px;
+  line-height: 1.19;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.header p {
+  font-size: 20px;
+}
+.resimler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.resim {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  cursor: pointer;
+  width: 100%;
+}
+.resim img {
+  width: 90px;
+  height: 90px;
+}
+
+.resimsol p {
+  text-align: start;
+  font-weight: bold;
+  margin-left: 15px;
+  width: 75%;
+}
+.resimsol h6 {
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  text-align: start;
+}
+.resimsol h6 i {
+  margin-right: 10px;
+}
+.resim:hover p {
+  text-decoration: underline;
+}
+.resimsol h6:hover {
+  text-decoration: underline;
+}
+
+.header a,
+.seeMore a {
+  text-decoration-color: #ffbf00;
+  text-decoration-thickness: 2px;
+  color: white;
+  background-image: linear-gradient(#ffbf00 0 0);
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-position: bottom;
+  transition: 0.4s;
+}
+.seeMore a {
+  margin-right: 250px;
+}
+#subscribe:hover,
+.header a:hover,
+.seeMore a:hover {
+  color: black;
+  background-size: 100% 100%;
+}
+#newsletter:hover {
+  background-size: 100% 100%;
+}
+.cizgi {
+  margin: auto;
+  margin-top: 25px;
+  border: 2px solid #ffbf00;
+  width: 60px;
+  margin-bottom: 60px;
+}
+.ortaBolum {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.OrtasolBolum {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding-bottom: 90px;
+  margin-left: 80px;
+}
+.OrtasolBolum h1 {
+  border-left: 5px solid #ffbf00;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+#paid {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  width: 75%;
+}
+
+.ortaSag {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin: 0 50px;
+}
+.ortaResim {
+  height: 420px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.ortaResim img {
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.3s;
+}
+.OrtaResim h3 {
+  position: absolute;
+  bottom: 130px;
+  left: 30px;
+}
+.ortaResim p {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 80%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: start;
+}
+.ortaResim a {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  text-decoration: none;
+  color: #fff;
+  text-align: start;
+}
+.ortaResim:hover img {
+  transform: scale(1.2);
+}
+.ortaAlt {
+  display: flex;
+  justify-content: center;
+}
+
+.ortaAltResim {
+ 
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.ortaAltResimUst {
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ortaAltResimUst img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.ortaAltResimAlt {
+  position: relative;
+  background-color: #fff;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: start;
+  align-items: start;
+  padding: 0 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.ortaAltResimAlt p {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 40%;
+  margin-bottom: 50px;
+}
+.ortaAltResimAlt a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.ortaAltResimUst img:hover {
+  transform: scale(1.1);
+}
+.ortaAltResim:hover .ortaAltResimAlt {
+  border-top: 5px solid #fdda00;
+}
+
+.secondortaAltResim {
+  color: black;
+}
+.arkavideo {
+  display: flex;
+  background-repeat: no-repeat;
+  background-image: url(./images/resting-hippopotamus-animals-dwd86f0wwcb6ar7a.gif);
+  background-size: 100% 100%;
+  height: 500px;
+  width: 100%;
+}
+#arkayazi {
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+#arkayazi p {
+  line-height: 30px;
+}
+#arkayazi h3,
+p {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+#arkayazi h3,
+h6 {
+  letter-spacing: 3px;
+}
+#arkayazi h6 {
+  color: white;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 150px;
+  text-decoration: underline;
+  text-decoration-color: #fdda00;
+  text-decoration-thickness: 2px;
+  background-image: linear-gradient(#fdda00 0 0);
+  background-size: 100% 0;
+  background-position: bottom;
+  transition: 0.3s;
+  margin: auto;
+  letter-spacing: 3px;
+}
+
+#arkayazi h6:hover {
+  color: black;
+  background-size: 100% 100%;
+}
+#discover {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #000;
+}
+#discover h6 {
+  color: white;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 120px;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 3px;
+  background-image: linear-gradient(yellow 0 0);
+  background-size: 100% 0;
+  background-position: bottom;
+  transition: 0.3s;
+  letter-spacing: 3px;
+  margin-left: 120px;
+}
+
+#discover h6:hover {
+  color: black;
+  background-size: 100% 100%;
+}
+#discover h4 {
+  color: white;
+  margin-right: 200px;
+}
+
+.slider-container {
+  margin-bottom: 200px;
+}
+.slider-container img {
+  width: 175px;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.slider-container img:hover {
+  transform: scale(1.1);
+}
+
+#natgeo {
+  font-size: 4rem;
+}
+.cizgi2 {
+  margin: auto;
+  margin-top: 25px;
+  border: 2px solid #ffbf00;
+  width: 60px;
+  margin-bottom: 200px;
+}
+.indexContent{
+  margin-bottom: 100px;
+  position: relative;
+  width: 60%;
+  height: 500px;
+}
+.index {
+  display: flex;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(images/ASL_NGHomepage_1920x2560_3x4.jpg);
+  background-size: 100% 100%;
+  height: 100%;
+width: 50%;
+  z-index: 3;
+  right: 200px;
+}
+
+#box1 {
+
+  background-image: linear-gradient(white, white);
+  background-color: #fdda00;
+  color: #000;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  background-size: 0 100%;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 400px;
+}
+#box1:hover {
+  background-size: 100% 100%;
+}
+
+#box1 p {
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+  .index2 {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-image: url(images/FirstAlaskans_NG-Homepage_1920x2560_3x4.jpg);
+  background-size: 100% 100%;
+  height: 100%;
+  left: 0px;
+}
+
+#box2 {
+  align-self: flex-end;
+  background-image: linear-gradient(white, white);
+  background-color: #fdda00;
+  color: #000;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  background-size: 0 100%;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+#box2:hover {
+  background-size: 100% 100%;
+}
+
+#box2 p {
+  margin-top: 10px;
+
+  letter-spacing: 2px;
+}
+
+.index3 {
+  display: flex;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(images/CIHOW_NGHomepage_1920x2560_3x4.jpg);
+  background-size: 100% 100%;
+  height: 100%;
+  z-index: 2;
+  left: 100px;
+}
+
+#box3 {
+  align-self: flex-end;
+  background-image: linear-gradient(white, white);
+  background-color: #fdda00;
+  color: #000;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  background-size: 0 100%;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+#box3:hover {
+  background-size: 100% 100%;
+}
+
+#box3 p {
+  margin-top: 10px;
+
+  letter-spacing: 2px;
+}
+.index4 {
+  display: flex;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(images/CritterFixers_NG-Homepage_1920x2560\ \(1\)_3x4.jpg);
+  background-size: 100% 100%;
+  height: 100%;
+  right: 100px;
+  z-index: 2 ;
+
+}
+#box4 {
+ 
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.index5 {
+  display: flex;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(images/NationalGeographic_2674186_4x3.jpg);
+  background-size: 100% 100%;
+  height: 100%;
+    right: 0;
+    z-index: 1 ;
+}
+
+#box5 {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.travel {
+  background-image: url(./images/nationalgeographic_2384595_3x2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
+  width: 100%;
+}
+.travel h1 {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.cizgi3 {
+  margin: auto;
+  margin-top: 25px;
+  border: 2px solid #ffbf00;
+  width: 60px;
+  margin-bottom: 60px;
+}
+
+.ortaBolum2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.OrtasolBolum2 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding-bottom: 90px;
+  margin-left: 80px;
+}
+.OrtasolBolum2 h3 {
+  border-left: 5px solid #ffbf00;
+  width: 90%;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  
+}
+#paid {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  width: 75%;
+}
+.ortaSag2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.ortaResim2 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.ortaResim2 img {
+  transition: 0.3s;
+}
+.ortaResim2 p {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: start;
+}
+.ortaResim2 a {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  text-decoration: none;
+  color: #fff;
+  text-align: start;
+}
+.ortaResim2:hover img {
+  transform: scale(1.2);
+}
+.ortaAlt2 {
+  display: flex;
+  justify-content: center;
+}
+
+.ortaAltResim2 {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.ortaAltResimUst2 {
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ortaAltResimUst2 img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+.ortaAltResimAlt2 {
+  position: relative;
+  background-color: #fff;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: start;
+  align-items: start;
+  padding: 0 20px;
+  transition: all 0.2s;
+}
+
+.ortaAltResimAlt2 p {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 30%;
+  margin-bottom: 50px;
+}
+.ortaAltResimAlt2 a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.ortaAltResimUst2 img:hover {
+  transform: scale(1.1);
+}
+.ortaAltResim2:hover .ortaAltResimAlt2 {
+  border-top: 5px solid #fdda00;
+}
+
+.secondortaAltResim2 {
+  color: black;
+}
+
+.podcasts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 100px 0;
+}
+.podcasts h2 {
+  color: #000;
+  font-size: 4rem;
+  margin-bottom: 100px;
+}
+.podcastCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
+}
+.podcastCard {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.podcastCard p {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: start;
+}
+.podcastCard img {
+  width: 100%;
+  transition: 0.3s;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.podcastCard:hover img {
+  transform: scale(1.2);
+}
+#applePodcast {
+  color: #000;
+  font-weight: 500;
+  margin-top: 50px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  background-image: linear-gradient(#fdda00 0 0);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#applePodcast:hover,
+#signUp:hover {
+  background-size: 0 100%;
+}
+.mission {
+  background: rgb(245, 242, 242);
+  width: 100%;
+  color: #000;
+  padding: 60px 0;
+}
+.mission h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.missionAlt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.missionAltSag {
+  text-align: start;
+  width: 500px;
+  padding: 0 50px;
+}
+.missionAltSag h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.signUpAlt {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background-image: url(images/MossForest.adapt.885.1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#signUp {
+  width: 450px;
+  height: 60px;
+  background-image: linear-gradient(#ffbf00 0 0);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+  padding-top: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footerUst {
+  margin-bottom: 60px;
+}
+.footerUst ul {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  margin-right: 100px;
+}
+.footerUst ul li {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 0 40px;
+}
+.footerUst ul li h3 {
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin: 50px 0 20px;
+}
+.footerUst ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  margin: 3px;
+}
+.footerUst ul li a:hover {
+  text-decoration: underline;
+}
+.sosyalmedya {
+  display: flex;
+  justify-content: start;
+}
+#sosyal {
+  margin-left: 50px;
+}
+.sosyalmedya i {
+  color: white;
+  font-size: 1.3rem;
+  align-self: start;
+  padding: 10px;
+  cursor: pointer;
+}
+#ABDbayrak {
+  width: 20px;
+  height: 15px;
+}
+.sosyalmedya i:hover {
+  color: #ffbf00;
+}
+.footerAlt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid grey;
+}
+.footerAlt img {
+  width: 150px;
+  margin-right: 30px;
+}
+.footerAlt p {
+  color: grey;
+  padding: 0 15px;
+  font-size: 13px;
+}
+#footerAltBorder {
+  border-right: 1px solid grey;
+}
